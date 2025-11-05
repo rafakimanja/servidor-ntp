@@ -64,9 +64,9 @@ func main() {
 	log.Printf("Servidor iniciando na porta %s", port)
 	log.Printf("=================================")
 	log.Printf("Rotas disponíveis:")
-	log.Printf("    - http://localhost%s/", port)
-	log.Printf("    - http://localhost%s/status", port)
-	log.Printf("    - http://localhost%s/info", port)
+	log.Printf("- http://localhost%s/", port)
+	log.Printf("- http://localhost%s/status", port)
+	log.Printf("- http://localhost%s/info", port)
 
 	// Iniciar servidor
 	if err := http.ListenAndServe(port, nil); err != nil {
